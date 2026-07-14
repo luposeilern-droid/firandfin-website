@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fur &amp; Fin App - Questions</title>
+  <meta name="description" content="Mobile Questions screen based on the Fur and Fin website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="phone-frame">
+      <div class="phone-top">
+        <span>9:41</span>
+        <span>Questions</span>
+        <span>100%</span>
+      </div>
+
+      <section class="app-hero" style="background-image: linear-gradient(180deg, rgba(17, 26, 20, 0.18), rgba(17, 26, 20, 0.78)), url('../images/trout.jpg');">
+        <a href="index.html" class="back-link back-link-light">Back</a>
+        <p class="app-kicker">Questions &amp; Tips</p>
+        <h1>Ask what you want to know from the field or the water.</h1>
+        <p>If you have a question about hunting, fishing or gear, this is the place to send it.</p>
+      </section>
+
+      <section class="section-block">
+        <div class="section-head">
+          <p class="eyebrow">Ask a Question</p>
+          <h2>Questions &amp; Tips</h2>
+        </div>
+        <p class="screen-copy">Ask about hunting, fishing, gear or the site itself.</p>
+        <form class="app-form" action="mailto:lupo.seilern@icloud.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email (so I can reply)" required />
+          <textarea name="question" placeholder="Type your question here..." required></textarea>
+          <button type="submit" class="submit-mock">Send Question</button>
+        </form>
+      </section>
+
+      <nav class="bottom-nav" aria-label="App navigation concept">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="seasons.html">Seasons</a>
+        <a href="videos.html">Videos</a>
+        <a href="gear.html">Gear</a>
+        <a href="field-notes.html">Notes</a>
+        <a href="questions.html" class="active">Questions</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

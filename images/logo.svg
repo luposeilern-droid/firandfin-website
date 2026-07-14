@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Antlers: clean tapered beams with two tines each side -->
+  <g fill="none" stroke="#B8860B" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="50" cy="74" rx="4" ry="3" fill="#B8860B" stroke="none"/>
+
+    <path d="M50,74 C43,66 34,54 28,40" stroke-width="6"/>
+    <path d="M28,40 C22,28 17,18 13,9" stroke-width="3"/>
+    <path d="M42,58 C34,55 26,55 19,59" stroke-width="3"/>
+    <path d="M30,38 C23,32 14,29 6,32" stroke-width="2.5"/>
+
+    <path d="M50,74 C57,66 66,54 72,40" stroke-width="6"/>
+    <path d="M72,40 C78,28 83,18 87,9" stroke-width="3"/>
+    <path d="M58,58 C66,55 74,55 81,59" stroke-width="3"/>
+    <path d="M70,38 C77,32 86,29 94,32" stroke-width="2.5"/>
+  </g>
+
+  <!-- Trout: clean bold silhouette -->
+  <g fill="#B8860B" stroke="#5c4308" stroke-width="1">
+    <path d="M12,76 C16,66 30,60 44,60 C56,60 66,64 72,70 L72,74 C66,80 54,84 40,84 C26,84 14,82 12,76 Z"/>
+    <path d="M72,70 L86,60 L78,73 L86,86 L72,74 Z"/>
+    <path d="M44,60 C46,50 52,45 60,44 C57,52 52,58 46,61 Z"/>
+    <circle cx="18" cy="71" r="2" fill="#1f3327" stroke="none"/>
+  </g>
+
+  <!-- Monogram -->
+  <text x="50" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" letter-spacing="3" fill="#f6f3ea">LSA</text>
+</svg>

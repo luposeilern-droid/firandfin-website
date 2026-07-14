@@ -1,0 +1,12 @@
+dev-server.log
+dev-server-error.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Common build folders
+node_modules/
+dist/
+build/
