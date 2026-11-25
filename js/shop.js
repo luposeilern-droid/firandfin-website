@@ -1,7 +1,9 @@
 (() => {
   const products = {
     vest: { name: 'Fur & Fin Heated Vest', category: 'Heated vests', image: 'vest-concept.svg' },
-    cap: { name: 'Fur & Fin Cap', category: 'Caps', image: 'cap-concept.svg' }
+    'cap-navy': { name: 'Fur & Fin Cap — Navy', category: 'Caps · Navy', image: 'fur-and-fin-caps.png', photo: 'cap-navy', colour: 'Navy' },
+    'cap-brown': { name: 'Fur & Fin Cap — Brown', category: 'Caps · Brown', image: 'fur-and-fin-caps.png', photo: 'cap-brown', colour: 'Brown' },
+    'cap-green': { name: 'Fur & Fin Cap — Dark Green', category: 'Caps · Dark Green', image: 'fur-and-fin-caps.png', photo: 'cap-green', colour: 'Dark Green' }
   };
   const dialog = document.querySelector('.product-dialog');
   document.querySelectorAll('[data-filter]').forEach(button => {
@@ -27,7 +29,10 @@
       document.getElementById('dialog-category').textContent = product.category;
       const image = document.getElementById('dialog-image');
       image.src = 'images/' + product.image;
-      image.alt = 'Design concept for ' + product.name;
+      image.alt = product.photo ? product.colour + ' Fur & Fin cap with embroidered antler and fin logo' : 'Design concept for ' + product.name;
+      image.parentElement.className = 'dialog-image' + (product.photo ? ' cap-photo ' + product.photo : '');
+      document.getElementById('dialog-image-label').textContent = product.photo ? product.colour : 'Design concept';
+      document.getElementById('dialog-description').textContent = product.photo ? product.colour + ' cap with the embroidered Fur & Fin antler and fin logo. The back features the slogan “HUNT MORE WORRY LESS”. Prices and launch details will be announced.' : 'Part of the first Fur & Fin collection. Final product photos, available options and full details will be shared at launch.';
       document.getElementById('product-enquiry').href = 'mailto:lupo.seilern@icloud.com?subject=' + encodeURIComponent('Question about ' + product.name);
       dialog.showModal();
     });
