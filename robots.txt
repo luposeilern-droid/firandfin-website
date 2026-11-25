@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://furandfin-website.vercel.app/sitemap.xml
